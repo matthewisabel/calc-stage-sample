@@ -37,24 +37,4 @@ stages:
         targetPath: '$(System.ArtifactsDirectory)'
 
 
-- stage: prod
-  displayName: 'Prod'
-  dependsOn: build
-  jobs:
-  - deployment: deployProd
-    displayName: 'Deploy prod'
-    environment: isabelProdEnv
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-          - task: DownloadPipelineArtifact@1
-            inputs:
-              downloadPath: '$(System.DefaultWorkingDirectory)'
-          - task: AzureWebApp@1
-            inputs:
-              azureSubscription: $(prodConnection)
-              appType: 'webAppLinux'
-              appName: $(prodApp)
-              runtimeStack: 'NODE|10.1'
-              startUpCommand: 'npm run start'
+-
