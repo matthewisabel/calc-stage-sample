@@ -10,10 +10,10 @@ pr: none
 
 variables: 
   # Service connection as configured in project settings
-  prodConnection: 'isabelProd'
+  prodConnection: 'appProd'
 
   # App name
-  prodApp: 'isabelProd'
+  prodApp: 'appProd'
 
 stages:
 - stage: build
