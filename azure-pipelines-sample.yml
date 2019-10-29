@@ -36,5 +36,3 @@ stages:
       inputs:
         targetPath: '$(System.ArtifactsDirectory)'
 
-
--
