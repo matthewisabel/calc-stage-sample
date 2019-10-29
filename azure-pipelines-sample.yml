@@ -8,12 +8,7 @@ trigger:
 
 pr: none
 
-variables: 
-  # Service connection as configured in project settings
-  prodConnection: 'appProd'
 
-  # App name
-  prodApp: 'appProd'
 
 stages:
 - stage: build
