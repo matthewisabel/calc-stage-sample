@@ -48,7 +48,7 @@ stages:
 
     displayName: 'Deploy prod'
 
-    environment: isabelProdEnv
+    environment: DummyProdEnv
 
     strategy:
 
