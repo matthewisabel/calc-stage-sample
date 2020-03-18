@@ -10,7 +10,7 @@ This pipeline is based off of [a sample node app by Ed Thomson](https://github.c
 3. `npm start`
 4. View your calculator in action at `localhost:3000`
 
-## Getting started with Azure Pipelines
+## Getting started with Azure Pipelines now...
 First, [install the Azure Pipelines app on the GitHub marketplace](https://github.com/marketplace/azure-pipelines) (it's free!). As part of the install, you'll be guided through creating an account and then you'll land in the setup wizard to get started with your first pipeline. If you're starting with this repo, it'll auto-detect this is a node project and you can pick the first sample template that looks like this below:
 
 ```yaml
